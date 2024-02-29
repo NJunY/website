@@ -1,0 +1,29 @@
+<marquee class="marquee p-2">
+    <p class="">
+      MESLOT，官方線上賭場服務供應商，符合國際標準，提供良好、穩定、100%安全的服務。
+    </p>
+</marquee>
+
+<style>
+    @keyframes marquee {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+  }
+  
+  .marquee {
+    z-index: -1;
+    overflow: hidden;
+    position: relative;
+    background-color: #28001f;
+    color: white;
+  }
+  
+  .marquee p {
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0;
+    line-height: 1.5;
+    /* position: absolute; */
+    /* animation: marquee 15s linear infinite; */
+  }
+</style>

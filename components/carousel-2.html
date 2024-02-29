@@ -1,0 +1,71 @@
+<div id="carousel-2" class="mx-1">
+    <!-- <h4 class="my-2 text-md-start text-center px-4">MESLOT 包括來自 50 個陣營的比賽，其中泰國排名第一，並包含所有投注。</h4> -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <img src="https://amb888vip.net/wp-content/uploads/2023/02/howto-regis-webslot.png" class="carousel-2-img" alt="">
+        </div>
+        <div class="owl-carousel" id="carousel-2-owl-carousel">
+            <div class="item">
+                <img src="https://picsum.photos/id/237/200/300" alt="">
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/id/237/200/300" alt="">
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/id/237/200/300" alt="">
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/id/237/200/300" alt="">
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/id/237/200/300" alt="">
+            </div>
+            <!-- Add more items as needed -->
+        </div>
+    </div>
+</div>
+
+<style>
+    #carousel-2-owl-carousel{
+        max-width: 1200px;
+    }
+    .carousel-2-img{
+        max-width: 500px;
+    }
+    .item{
+        max-height: 200px;
+        object-fit: contain;
+    }
+
+    .item img{
+        width: 100%;
+        height: 200px;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+</style>
+  
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            600: {
+                items: 3,
+                nav: false
+            },
+            1000: {
+                items: 3,
+                loop: false
+            }
+            }
+        });
+    });
+
+</script>

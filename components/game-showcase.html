@@ -1,0 +1,75 @@
+<div class="container" id="game-showcase">
+    <h5 class="text-center">
+        介紹真人賭場遊戲、線上賭場、直接網站 MESLOT 熱門線上賭場
+    </h5>
+    <div class="container-fluid">
+        <h4>
+            熱門線上賭場
+        </h4>
+        <div id="game-container-1" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-start">
+            <!-- Dynamic items will be added here -->
+        </div>
+    </div>
+    <div class="container-fluid">
+        <h4>
+            熱門線上老虎機
+        </h4>
+        <div id="game-container-2" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-6 justify-content-start">
+            <!-- Dynamic items will be added here -->
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        function addItem(section, text, imageUrl) {
+            // Create the card container
+            var col = $('<div>', {class: 'col mb-5'});
+            var card = $('<div>', { class: 'card h-100', style: 'border: none;' }); // Added m-2 for some margin
+
+            // Create the image element
+            var img = $('<img>', {
+                class: 'card-img-top',
+                src: imageUrl,
+                alt: text,
+                style: 'height: 100px; object-fit: cover; border-radius: 15px;' // Set a fixed height and cover for the image
+            });
+
+            // Create the card body with text
+            var cardBody = $('<div>', { class: 'card-body' });
+            var cardText = $('<p>', { class: 'card-text', text: text });
+
+            // Append the image and card body to the card container
+            cardBody.append(cardText);
+            card.append(img).append(cardBody);
+            col.append(card);
+
+            // Append the card to the flex container
+            $(section).append(col);
+        }
+
+        function game_1(){
+            for(let i = 0; i<4; i++){
+                addItem("#game-container-1",`game ${i}`, "https://www.meslot9.com/images/hot_game/popular/popular_2.png")
+            }
+        }
+
+        function game_2(){
+            for(let i = 0; i<16; i++){
+                addItem("#game-container-2",`game ${i}`, "https://www.meslot9.com/images/slot/games/pgsoft-slot.png")
+            }
+        }
+      // Add more items as needed
+        game_1();
+        game_2();
+    });
+</script>
+
+<style>
+    #game-showcase{
+        color: white;
+    }
+    #game-showcase .card{
+        background: transparent;
+    }
+</style>

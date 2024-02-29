@@ -1,0 +1,128 @@
+<div id="carousel-3" class="mx-1">
+    <div class="container">
+        <div class="row">
+            <div class="d-flex flex-col">
+                <div class="owl-carousel" id="carousel-3-carousel-1">
+                    <div class="item">
+                        <img src="https://picsum.photos/id/237/200/300" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://picsum.photos/id/237/200/300" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://picsum.photos/id/237/200/300" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://picsum.photos/id/237/200/300" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://picsum.photos/id/237/200/300" alt="">
+                    </div>
+                </div>
+                <div class="owl-carousel" id="carousel-3-carousel-2">
+                    <div class="item">
+                        <img src="https://picsum.photos/id/237/200/300" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://picsum.photos/id/237/200/300" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://picsum.photos/id/237/200/300" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://picsum.photos/id/237/200/300" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://picsum.photos/id/237/200/300" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="contaner-fluid">
+                <img src="https://storage.googleapis.com/meslotvip_cdn/frontend/meslot/seo_section/%E0%B8%AA%E0%B8%A1%E0%B8%B1%E0%B8%84%E0%B8%A3%E0%B8%AA%E0%B8%A1%E0%B8%B2%E0%B8%8A%E0%B8%B4%E0%B8%81.png" alt="">
+            </div>
+
+            <div class="d-flex flex-col">
+                <div class="owl-carousel" id="carousel-3-carousel-3">
+                    <div class="item">
+                        <img src="https://picsum.photos/id/237/200/300" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://picsum.photos/id/237/200/300" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://picsum.photos/id/237/200/300" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://picsum.photos/id/237/200/300" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://picsum.photos/id/237/200/300" alt="">
+                    </div>
+                </div>
+                <div class="owl-carousel" id="carousel-3-carousel-4">
+                    <div class="item">
+                        <img src="https://picsum.photos/id/237/200/300" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://picsum.photos/id/237/200/300" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://picsum.photos/id/237/200/300" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://picsum.photos/id/237/200/300" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://picsum.photos/id/237/200/300" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    #carousel-3-owl-carousel{
+        max-width: 1200px;
+    }
+    .carousel-3-img{
+        max-width: 500px;
+    }
+    .item{
+        max-height: 200px;
+        object-fit: contain;
+    }
+
+    #carousel-3 .item img{
+        width: 100%;
+        /* height: 200px; */
+        border-radius: 15px;
+        object-fit: cover;
+    }
+</style>
+  
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            // margin: 10,
+            responsiveClass: true,
+            responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            600: {
+                items: 3,
+                nav: false
+            },
+            1000: {
+                items: 3,
+                loop: false
+            }
+            }
+        });
+    });
+
+</script>
